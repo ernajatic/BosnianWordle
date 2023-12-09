@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: #404040;
+}
+
+.dark-theme {
+    --primary-color: #404040;
+    --secondary-color: white;
+}
+
+#icon {
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 676px;
+}
+
+hr {
+    width: 500px;
+}
+
+.stopwatch {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+#title {
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    /* BOX */
+    border: 2px solid lightgrey;
+    width: 60px; 
+    height: 60px;
+    margin: 2.5px;
+
+    /* TEXT */
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct {
+    background-color: #6aa646;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.present {
+    background-color: #c9b458;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.absent {
+    background-color: #787c7e;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    margin: 0 auto 8px;
+}
+
+.key-tile {
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 28px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-transform: uppercase;
+    /*margin-right: 6px;*/
+    border-radius: 4px;
+    user-select: none;
+
+}
+
+.key-tile {
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 28px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-transform: uppercase;
+    /*margin-right: 6px;*/
+    border-radius: 4px;
+    user-select: none;
+}
+
+.enter-key-tile {
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 28px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-transform: uppercase;
+    /*margin-right: 6px;*/
+    border-radius: 4px;
+    user-select: none;
+}
+
+
+
+

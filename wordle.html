@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Wordle.ba - Igra riječi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0, user-scalable=no">
+        <link href="images/wordle.jpg" rel="icon shortcut" sizes="3232" />
+
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+    </head>
+    
+    <body>
+        <img src="images/mode.png" id="icon">
+        <h1 id="title">Wordle BiH</h1>
+        <div class="stopwatch" id="stopwatch">00:00</div>
+        <hr>
+        <br>
+        <div id="board">
+        </div>
+
+        <br>
+        <h1 id="answer"></h1>
+    
+    <script>
+        var icon = document.getElementById("icon");
+        var currentTheme = localStorage.getItem("theme");
+
+    
+        if (currentTheme === "dark") {
+            document.body.classList.add("dark-theme");
+            icon.src = "images/mode2.png";
+        }       
+        else {
+            document.body.classList.remove("dark-theme");
+            icon.src = "images/mode.png";
+        }
+
+        icon.onclick = function () {
+    
+        if (document.body.classList.contains("dark-theme")) {
+            document.body.classList.remove("dark-theme");
+            icon.src = "images/mode.png";
+            localStorage.setItem("theme", "light");
+        } 
+        else {
+            document.body.classList.add("dark-theme");
+            icon.src = "images/mode2.png";
+            localStorage.setItem("theme", "dark");
+        }
+        }
+
+    </script>
+    </body>
+</html>
